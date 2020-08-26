@@ -3,3 +3,41 @@ td {
    height: 100px;
    width: 100px;
 }
+
+.cell {
+   text-align: center;
+   font-size: 50px;
+}
+
+.cell:hover {
+   background-color: bisque;
+}
+
+.nonclick {
+   pointer-events: none;
+}
+
+#message {
+   padding: 20px;
+}
+
+.form-popup {
+   display: none;
+   /* position: fixed; */
+   /* bottom: 0; */
+   /* right: 15px; */
+   border: 3px solid #f1f1f1;
+   max-width: 300px;
+   /* z-index: 9; */
+}
+
+.form-container {
+   max-width: 300px;
+   padding: 10px;
+   background-color: white;
+ }
+
+ #replay {
+    display: none;
+    padding: 20px;
+ }

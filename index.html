@@ -12,7 +12,8 @@
 
 </header>
 
-<body>
+<body onload="openForm()">
+
    <table>
 
       <tr>
@@ -35,6 +36,23 @@
 
    </table>
 
+   <div id="message"></div>
+   <button id="replay" onclick="window.location.reload();">Replay</button>
+
+   <div class="form-popup" id="myForm">
+      <form class="form-container">
+
+         <label for="player1"><b>Name for player 1</b></label>
+         <input type="text" placeholder="Enter name" required id="player1"><br><br>
+
+         <label for="player2"><b>Name for player 2</b></label>
+         <input type="text" placeholder="Enter name" required id="player2"><br><br>
+
+         <button type="button" class="btn" onclick="closeForm()">Let's play!</button>
+         <button type="button" class="btn-cancel" onclick="resetForm()">Cancel</button>
+
+      </form>
+   </div>
 
    <script src="script.js"></script>
 </body>
